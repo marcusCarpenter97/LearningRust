@@ -1,0 +1,9 @@
+[package]
+name = "simple_curl"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = "0.12.24"
+tokio = { version = "1.48.0", features = ["full"] }
+url = "2.5.7"
