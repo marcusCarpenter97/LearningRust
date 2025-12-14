@@ -23,6 +23,7 @@ Each example is simple and self-contained, making it easier to understand and re
 | `temperature_converter` | Command-line tool converting between Celsius, Fahrenheit etc. — practice with data handling and formatting. |
 | `todo_list`       | A command-line to-do list — practice data persistence / structuring programs. |
 | `test_save`       | Examples related to saving data and testing — practice Rust’s testing and serialization/IO. | 
+| `talking_rust`    | A small client server app that broadcasts client messages to other clients. |
 
 ---
 
@@ -37,5 +38,8 @@ Then from the root of this repo:
 cd guessing_game
 cargo run
 
-# Or run tests (if any) across all modules:
-cargo test
+# To run talking_rust
+cd talking_rust
+cargo run --bin server
+cargo run --bin client  # Only works with more than 2.
+
